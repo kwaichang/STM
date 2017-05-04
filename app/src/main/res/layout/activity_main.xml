@@ -12,7 +12,7 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:orientation="vertical"
-        android:background="@drawable/dragonfly">
+        android:background="@drawable/background">
     </RelativeLayout>
     <LinearLayout
         android:layout_width="296dp"
@@ -32,7 +32,8 @@
             android:id="@+id/button5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Record a task" />
+            android:text="Record a task"
+            android:onClick="editActivity"/>
 
         <Space
             android:layout_width="match_parent"

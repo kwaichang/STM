@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Student Time Management</string>
+    <string name="title_activity_edit">Edit/record a task</string>
 </resources>
