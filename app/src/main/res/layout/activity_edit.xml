@@ -11,21 +11,21 @@
         android:layout_height="0dp"
         android:background="@drawable/background"
         android:orientation="vertical"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
 
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:id="@+id/linearLayout2">
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -133,6 +133,14 @@
                         android:inputType="textPersonName"
                         android:maxWidth="@dimen/edit_label_width" />
 
+                    <Button
+                        android:id="@+id/editSetDateBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="setDate"
+                        android:text="Set date" />
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -155,10 +163,10 @@
                         android:id="@+id/editDueDate"
                         android:layout_width="191dp"
                         android:layout_height="wrap_content"
+                        android:layout_weight="0.16"
                         android:ems="10"
                         android:inputType="textPersonName"
-                        android:maxWidth="@dimen/edit_label_width"
-                        android:layout_weight="0.16" />
+                        android:maxWidth="@dimen/edit_label_width" />
 
                 </LinearLayout>
 
@@ -171,7 +179,7 @@
 
                     <TextView
                         android:id="@+id/textUrgency"
-                        android:layout_width="203dp"
+                        android:layout_width="140dp"
                         android:layout_height="wrap_content"
                         android:minWidth="@dimen/edit_label_width"
                         android:text="Urgency/importance"
@@ -181,9 +189,9 @@
                         android:id="@+id/editImportanceSpinner"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
                         android:entries="@array/importance_array"
-                        android:prompt="@string/importance_prompt"
-                        android:layout_weight="1" />
+                        android:prompt="@string/importance_prompt" />
 
                 </LinearLayout>
 
