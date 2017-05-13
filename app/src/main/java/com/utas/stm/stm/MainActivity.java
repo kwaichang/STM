@@ -19,5 +19,8 @@ public class MainActivity extends AppCompatActivity {
     public void editActivity(View v) {
         startActivity(new Intent(this, EditActivity.class));
     }
+    public void viewActivity(View v) {
+        startActivity(new Intent(this, ViewActivity.class));
+    }
 
 }
