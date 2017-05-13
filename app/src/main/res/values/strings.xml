@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">Student Time Management</string>
     <string name="title_activity_edit">Edit/record a task</string>
+    <string name="importance_prompt">Task importance</string>
+
+    <string-array name="importance_array">
+        <item>Urgent and important</item>
+        <item>Not urgent and important</item>
+        <item>Urgent and not important</item>
+        <item>Not urgent and not important</item>
+    </string-array>
+
 </resources>
