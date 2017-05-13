@@ -39,7 +39,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Unit code" />
+                        android:minWidth="@dimen/edit_label_width"
+                        android:text="Unit code"
+                        android:textColor="@android:color/black" />
 
                     <EditText
                         android:id="@+id/editUnitCode"
@@ -48,6 +50,7 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:inputType="textPersonName"
+                        android:maxWidth="@dimen/edit_label_width"
                         android:text="" />
                 </LinearLayout>
 
@@ -63,7 +66,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Task" />
+                        android:minWidth="@dimen/edit_label_width"
+                        android:text="Task"
+                        android:textColor="@android:color/black" />
 
                     <EditText
                         android:id="@+id/editTask"
@@ -72,6 +77,7 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:inputType="textPersonName"
+                        android:maxWidth="@dimen/edit_label_width"
                         android:text="" />
                 </LinearLayout>
 
@@ -87,7 +93,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Weighting" />
+                        android:minWidth="@dimen/edit_label_width"
+                        android:text="Weighting"
+                        android:textColor="@android:color/black" />
 
                     <EditText
                         android:id="@+id/editWeighting"
@@ -96,6 +104,7 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:inputType="textPersonName"
+                        android:maxWidth="@dimen/edit_label_width"
                         android:text="" />
                 </LinearLayout>
 
@@ -111,7 +120,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Due date" />
+                        android:minWidth="@dimen/edit_label_width"
+                        android:text="Due date"
+                        android:textColor="@android:color/black" />
 
                     <EditText
                         android:id="@+id/editDueDate"
@@ -120,7 +131,7 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:inputType="textPersonName"
-                        android:text=" / / " />
+                        android:maxWidth="@dimen/edit_label_width" />
 
                 </LinearLayout>
 
@@ -135,23 +146,19 @@
                         android:id="@+id/textDueTime"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Due time" />
+                        android:layout_weight="0.13"
+                        android:minWidth="@dimen/edit_label_width"
+                        android:text="Due time"
+                        android:textColor="@android:color/black" />
 
                     <EditText
                         android:id="@+id/editDueDate"
-                        android:layout_width="wrap_content"
+                        android:layout_width="191dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:ems="10"
                         android:inputType="textPersonName"
-                        android:text=" : " />
-
-                    <TextClock
-                        android:id="@+id/textClock"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1" />
+                        android:maxWidth="@dimen/edit_label_width"
+                        android:layout_weight="0.16" />
 
                 </LinearLayout>
 
@@ -164,25 +171,26 @@
 
                     <TextView
                         android:id="@+id/textUrgency"
-                        android:layout_width="wrap_content"
+                        android:layout_width="203dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Urgency/importance" />
+                        android:minWidth="@dimen/edit_label_width"
+                        android:text="Urgency/importance"
+                        android:textColor="@android:color/black" />
 
-                    <EditText
-                        android:id="@+id/editUrgency"
-                        android:layout_width="wrap_content"
+                    <Spinner
+                        android:id="@+id/editImportanceSpinner"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:inputType="textPersonName"
-                        android:text=" : " />
+                        android:entries="@array/importance_array"
+                        android:prompt="@string/importance_prompt"
+                        android:layout_weight="1" />
+
                 </LinearLayout>
 
             </LinearLayout>
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttonSubmit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/linearLayout2"
