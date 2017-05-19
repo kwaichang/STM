@@ -81,7 +81,7 @@ public class EditActivity extends AppCompatActivity implements View.OnClickListe
                         public void onTimeSet(TimePicker view, int hourOfDay,
                                               int minute) {
 
-                            txtTime.setText(hourOfDay + ":" + minute);
+                            txtTime.setText(pad(hourOfDay) + ":" + pad(minute));
                         }
                     }, mHour, mMinute, false);
             timePickerDialog.show();
@@ -92,5 +92,10 @@ public class EditActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-
+    private static String pad(int c) {
+        if (c >= 10)
+            return String.valueOf(c);
+        else
+            return "0" + String.valueOf(c);
+    }
 }
