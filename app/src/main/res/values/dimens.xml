@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="edit_label_width">90dp</dimen>
+    <dimen name="edit_label_padding_left">10dp</dimen>
+    <dimen name="edit_padding_right">10dp</dimen>
 </resources>

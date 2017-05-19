@@ -36,10 +36,11 @@
 
                     <TextView
                         android:id="@+id/textUnitCode"
-                        android:layout_width="wrap_content"
+                        android:layout_width="20dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:minWidth="@dimen/edit_label_width"
+                        android:paddingLeft="@dimen/edit_label_padding_left"
                         android:text="Unit code"
                         android:textColor="@android:color/black" />
 
@@ -51,6 +52,7 @@
                         android:ems="10"
                         android:inputType="textPersonName"
                         android:maxWidth="@dimen/edit_label_width"
+                        android:paddingRight="@dimen/edit_padding_right"
                         android:text="" />
                 </LinearLayout>
 
@@ -63,10 +65,11 @@
 
                     <TextView
                         android:id="@+id/textTask"
-                        android:layout_width="wrap_content"
+                        android:layout_width="20dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:minWidth="@dimen/edit_label_width"
+                        android:paddingLeft="@dimen/edit_label_padding_left"
                         android:text="Task"
                         android:textColor="@android:color/black" />
 
@@ -78,6 +81,7 @@
                         android:ems="10"
                         android:inputType="textPersonName"
                         android:maxWidth="@dimen/edit_label_width"
+                        android:paddingRight="@dimen/edit_padding_right"
                         android:text="" />
                 </LinearLayout>
 
@@ -90,10 +94,11 @@
 
                     <TextView
                         android:id="@+id/textWeighting"
-                        android:layout_width="wrap_content"
+                        android:layout_width="20dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:minWidth="@dimen/edit_label_width"
+                        android:paddingLeft="@dimen/edit_label_padding_left"
                         android:text="Weighting"
                         android:textColor="@android:color/black" />
 
@@ -105,6 +110,7 @@
                         android:ems="10"
                         android:inputType="textPersonName"
                         android:maxWidth="@dimen/edit_label_width"
+                        android:paddingRight="@dimen/edit_padding_right"
                         android:text="" />
                 </LinearLayout>
 
@@ -117,25 +123,25 @@
 
                     <TextView
                         android:id="@+id/textDueDate"
-                        android:layout_width="wrap_content"
+                        android:layout_width="60dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:minWidth="@dimen/edit_label_width"
+                        android:paddingLeft="@dimen/edit_label_padding_left"
                         android:text="Due date"
                         android:textColor="@android:color/black" />
 
                     <EditText
                         android:id="@+id/editDueDate"
-                        android:layout_width="wrap_content"
+                        android:layout_width="199dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:ems="10"
                         android:inputType="date"
                         android:maxWidth="@dimen/edit_label_width" />
 
                     <Button
                         android:id="@+id/editSetDateBtn"
-                        android:layout_width="98dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Set date" />
 
@@ -150,27 +156,27 @@
 
                     <TextView
                         android:id="@+id/textDueTime"
-                        android:layout_width="wrap_content"
+                        android:layout_width="60dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0.13"
+                        android:layout_weight="1"
                         android:minWidth="@dimen/edit_label_width"
+                        android:paddingLeft="@dimen/edit_label_padding_left"
                         android:text="Due time"
                         android:textColor="@android:color/black" />
 
                     <EditText
                         android:id="@+id/editDueTime"
-                        android:layout_width="191dp"
+                        android:layout_width="199dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0.16"
                         android:ems="10"
-                        android:inputType="datetime"
+                        android:inputType="time"
                         android:maxWidth="@dimen/edit_label_width" />
 
                     <Button
                         android:id="@+id/editSetTimeBtn"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0.22"
+                        android:layout_weight="0.03"
                         android:text="Set time" />
 
                 </LinearLayout>
@@ -187,6 +193,7 @@
                         android:layout_width="140dp"
                         android:layout_height="wrap_content"
                         android:minWidth="@dimen/edit_label_width"
+                        android:paddingLeft="@dimen/edit_label_padding_left"
                         android:text="Urgency/importance"
                         android:textColor="@android:color/black" />
 
