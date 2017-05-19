@@ -45,7 +45,6 @@ public class Questionnaire extends Activity implements View.OnClickListener {
             total *= 100;
             int totalint = (int) Math.round(total);
             btnSubmit.setText("Score: "+totalint+"%");
-            intent.putExtra("score", totalint);
             total = 0;
         }
     }
