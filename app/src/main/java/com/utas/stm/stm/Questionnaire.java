@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.content.res.Resources;
+import android.content.SharedPreferences;
 import android.content.Intent;
 
 public class Questionnaire extends Activity implements View.OnClickListener {
@@ -15,9 +16,11 @@ public class Questionnaire extends Activity implements View.OnClickListener {
     RadioGroup radioGroup;
     float total = 0;
     Intent intent = new Intent();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
 
 
         setContentView(R.layout.activity_questionnaire);
@@ -46,6 +49,9 @@ public class Questionnaire extends Activity implements View.OnClickListener {
             int totalint = (int) Math.round(total);
             btnSubmit.setText("Score: "+totalint+"%");
             total = 0;
+            Intent i=new Intent(Questionnaire.this,MainActivity.class);
+            i.putExtra("Score",totalint);
+            startActivity(i);
         }
     }
 

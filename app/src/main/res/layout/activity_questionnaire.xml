@@ -55,7 +55,7 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Regulary"
+                    android:text="Regularly"
                     android:id="@+id/q1_opt4"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
@@ -111,7 +111,7 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Regulary"
+                    android:text="Regularly"
                     android:id="@+id/q2_opt4"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
@@ -168,7 +168,7 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Regulary"
+                    android:text="Regularly"
                     android:id="@+id/q3_opt4"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
@@ -224,7 +224,7 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Regulary"
+                    android:text="Regularly"
                     android:id="@+id/q4_opt4"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
@@ -280,7 +280,7 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Regulary"
+                    android:text="Regularly"
                     android:id="@+id/q5_opt4"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
@@ -334,7 +334,7 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Regulary"
+                    android:text="Regularly"
                     android:id="@+id/q6_opt4"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
@@ -390,7 +390,7 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Regulary"
+                    android:text="Regularly"
                     android:id="@+id/q7_opt4"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
@@ -446,7 +446,7 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Regulary"
+                    android:text="Regularly"
                     android:id="@+id/q8_opt4"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
@@ -502,7 +502,7 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Regulary"
+                    android:text="Regularly"
                     android:id="@+id/q9_opt4"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
@@ -558,7 +558,7 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Regulary"
+                    android:text="Regularly"
                     android:id="@+id/q10_opt4"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
@@ -614,7 +614,7 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Regulary"
+                    android:text="Regularly"
                     android:id="@+id/q11_opt4"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
@@ -670,7 +670,7 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Regulary"
+                    android:text="Regularly"
                     android:id="@+id/q12_opt4"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
@@ -726,7 +726,7 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Regulary"
+                    android:text="Regularly"
                     android:id="@+id/q13_opt4"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
@@ -782,7 +782,7 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Regulary"
+                    android:text="Regularly"
                     android:id="@+id/q14_opt4"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
@@ -838,7 +838,7 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Regulary"
+                    android:text="Regularly"
                     android:id="@+id/q15_opt4"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
@@ -895,7 +895,7 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Regulary"
+                    android:text="Regularly"
                     android:id="@+id/q16_opt4"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
@@ -952,7 +952,7 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Regulary"
+                    android:text="Regularly"
                     android:id="@+id/q17_opt4"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
@@ -1008,7 +1008,7 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Regulary"
+                    android:text="Regularly"
                     android:id="@+id/q18_opt4"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
