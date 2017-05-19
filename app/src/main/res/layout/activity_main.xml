@@ -71,6 +71,7 @@
                 android:id="@+id/btnQuestionnaire"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="questionnaireActivity"
                 android:text="Do questionnaire" />
 
             <Space
@@ -105,13 +106,12 @@
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
-                <EditText
+                <TextView
                     android:id="@+id/editTextScore"
                     android:layout_width="94dp"
                     android:layout_height="56dp"
                     android:layout_weight="1.11"
                     android:ems="10"
-                    android:inputType="textPersonName"
                     android:text="0"
                     android:textColor="@android:color/black"
                     android:textSize="24sp" />
