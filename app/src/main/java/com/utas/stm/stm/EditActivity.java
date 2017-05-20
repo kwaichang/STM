@@ -3,6 +3,7 @@ package com.utas.stm.stm;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.app.TimePickerDialog;
+import android.database.sqlite.SQLiteDatabase;
 import android.icu.text.AlphabeticIndex;
 import android.icu.util.Calendar;
 import android.support.v7.app.AppCompatActivity;
@@ -18,6 +19,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
+import com.utas.stm.stm.TaskDB;
 
 public class EditActivity extends AppCompatActivity implements View.OnClickListener {
     Button btnDatePicker, btnTimePicker, btnSubmit;
@@ -88,6 +90,8 @@ public class EditActivity extends AppCompatActivity implements View.OnClickListe
         }
 
         if (v == btnSubmit) {
+            SQLiteDatabase db;
+
             Log.d("submit", "submit button pressed");
         }
     }

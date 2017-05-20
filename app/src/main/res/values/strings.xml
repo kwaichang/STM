@@ -10,5 +10,6 @@
         <item>Not urgent and not important</item>
     </string-array>
     <string name="title_activity_questionnaire">Questionnaire</string>
+    <string name="title_activity_task_list">TaskListActivity</string>
 
 </resources>

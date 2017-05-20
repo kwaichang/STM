@@ -22,7 +22,10 @@
         <activity android:name=".ViewActivity" />
         <activity
             android:name=".Questionnaire"
-            android:label="@string/title_activity_questionnaire"></activity>
+            android:label="@string/title_activity_questionnaire" />
+        <activity
+            android:name=".TaskListActivity"
+            android:label="@string/title_activity_task_list"></activity>
     </application>
 
 </manifest>

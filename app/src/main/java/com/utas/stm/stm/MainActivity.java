@@ -39,10 +39,8 @@ TextView scoreText;
     public void editActivity(View v) {
         startActivity(new Intent(this, EditActivity.class));
     }
-    public void viewActivity(View v) {
-        startActivity(new Intent(this, ViewActivity.class));
-    }
     public void questionnaireActivity(View v) { startActivity(new Intent(this, Questionnaire.class));}
+    public void listActivity(View v) { startActivity(new Intent(this, TaskListActivity.class));}
 
 
 }

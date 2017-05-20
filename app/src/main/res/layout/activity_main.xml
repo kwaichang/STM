@@ -59,7 +59,7 @@
                 android:id="@+id/btnView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="viewActivity"
+                android:onClick="listActivity"
                 android:text="View tasks" />
 
             <Space
@@ -91,11 +91,12 @@
                 android:layout_weight="0.25" />
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="268dp"
                 android:layout_height="128dp"
                 android:orientation="horizontal"
                 android:paddingTop="35dip"
-                android:weightSum="1">
+                android:weightSum="1"
+                android:layout_weight="0.27">
 
                 <TextView
                     android:id="@+id/textViewScore"
@@ -108,9 +109,8 @@
 
                 <TextView
                     android:id="@+id/editTextScore"
-                    android:layout_width="94dp"
+                    android:layout_width="87dp"
                     android:layout_height="56dp"
-                    android:layout_weight="1.11"
                     android:ems="10"
                     android:text="0%"
                     android:textColor="@android:color/black"
