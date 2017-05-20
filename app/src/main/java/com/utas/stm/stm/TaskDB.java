@@ -42,12 +42,11 @@ public class TaskDB {
         this.mCtx = ctx;
     }
 
-    public void onCreate(SQLiteDatabase db) {
-        db.execSQL(TASK_TABLE_CREATE);
+   public void onCreate(SQLiteDatabase db) {
+       db.execSQL(TASK_TABLE_CREATE);
     }
 
     public void onsaving(String code, String task, String date, String time, String weighting, String urgency) {
-        SQLiteDatabase db = db.getWritableDatabase();
         ContentValues cv = new ContentValues();
         cv.put(KEY_CODE, code);
         cv.put(KEY_TASK, task);
@@ -55,7 +54,28 @@ public class TaskDB {
         cv.put(KEY_TIME, task);
         cv.put(KEY_WEIGHTING, task);
         cv.put(KEY_URGENCY, task);
-        db.insert(TASK_TABLE, null, cv);
+       mDb.insert(TASK_TABLE, null, cv);
+    }
+
+    private static class DatabaseHelper extends SQLiteOpenHelper {
+        DatabaseHelper(Context context)
+        {
+            super(context, DATABASE_NAME, null, DATABASE_VERSION);
+        }
+        @Override
+        public void onCreate(SQLiteDatabase db) {
+            Log.d(TAG, "DatabaseHelper onCreate");
+            db.execSQL(TASK_TABLE_CREATE);
+        }
+        @Override
+        public void onUpgrade(SQLiteDatabase db, int oldVersion,
+                              int newVersion) {
+            Log.d(TAG, "DatabaseHelper onUpgrade");
+            Log.w(TAG, "Upgrading database from version " + oldVersion + " to "
+                    + newVersion + ", which will destroy all old data");
+            db.execSQL("DROP TABLE IF EXISTS " + TASK_TABLE);
+            onCreate(db);
+        } // onUpgrade
     }
 }
 
