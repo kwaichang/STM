@@ -8,74 +8,62 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-public class TaskDB {
+public class TaskDB extends SQLiteOpenHelper {
     private static final String TAG = "TaskDB";
 
-    private static final String DATABASE_NAME 		= "taskdata";
-    private static final int 	DATABASE_VERSION 	= 2;
-    private static final String TASK_TABLE 		= "task_data";
+    private static final String DATABASE_NAME = "taskdata";
+    private static final int DATABASE_VERSION = 2;
 
-    public static final String KEY_ROWID 			= "_id";
-    public static final String KEY_PROPERTY_ID 		= "property_id";
-    public static final String KEY_CODE 		    = "code";
-    public static final String KEY_TASK 		    = "task";
-    public static final String KEY_DATE             = "date";
-    public static final String KEY_TIME             = "time";
-    public static final String KEY_WEIGHTING		= "weighting";
-    public static final String KEY_URGENCY			= "urgency";
+    public static final String TASK_TABLE = "task_data";
+    public static final String KEY_ROWID = "_id";
+    public static final String KEY_TASK_ID = "task_id";
+    public static final String KEY_CODE = "code";
+    public static final String KEY_TASK = "task";
+    public static final String KEY_DATE = "date";
+    public static final String KEY_TIME = "time";
+    public static final String KEY_WEIGHTING = "weighting";
+    public static final String KEY_URGENCY = "urgency";
+    public SQLiteDatabase mDb;
 
-    private static final String TASK_TABLE_CREATE = "create table "
-            + TASK_TABLE
-            + " (" + KEY_ROWID + " integer primary key autoincrement, "
-            + KEY_PROPERTY_ID + " long integer not null, "
-            + KEY_CODE  + " string not null, "
-            + KEY_TASK  + " string not null, "
-            + KEY_DATE + " string not null, "
-            + KEY_TIME   + " string not null, "
-            + KEY_WEIGHTING + " string not null, "
-            + KEY_URGENCY + " string not null);";
-
-    private SQLiteDatabase mDb;
-    private final Context mCtx;
-
-    public TaskDB(Context ctx) {
-        this.mCtx = ctx;
+    public TaskDB(Context context) {
+        super(context, DATABASE_NAME, null, DATABASE_VERSION);
+        mDb = getWritableDatabase();
     }
 
-   public void onCreate(SQLiteDatabase db) {
-       db.execSQL(TASK_TABLE_CREATE);
+    @Override
+    public void onCreate(SQLiteDatabase db) {
+        final String TASK_TABLE_CREATE = "CREATE TABLE "
+                + TASK_TABLE
+                + "( " + KEY_ROWID + " INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "
+                + KEY_CODE + " STRING NOT NULL, "
+                + KEY_TASK + " STRING NOT NULL, "
+                + KEY_DATE + " STRING NOT NULL, "
+                + KEY_TIME + " STRING NOT NULL, "
+                + KEY_WEIGHTING + " STRING NOT NULL, "
+                + KEY_URGENCY + " STRING NOT NULL);";
+        Log.d("submit", "submit button pressed");
+        Log.d("Create", "OnCreate");
+        db.execSQL(TASK_TABLE_CREATE);
+        Log.d("Create", "OnCreate");
     }
 
+    @Override
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        // TODO Auto-generated method stub
+        db.execSQL("DROP TABLE IF EXISTS " + TASK_TABLE);
+        onCreate(db);
+    }
     public void onsaving(String code, String task, String date, String time, String weighting, String urgency) {
         ContentValues cv = new ContentValues();
         cv.put(KEY_CODE, code);
         cv.put(KEY_TASK, task);
-        cv.put(KEY_DATE, task);
-        cv.put(KEY_TIME, task);
-        cv.put(KEY_WEIGHTING, task);
-        cv.put(KEY_URGENCY, task);
-       mDb.insert(TASK_TABLE, null, cv);
-    }
-
-    private static class DatabaseHelper extends SQLiteOpenHelper {
-        DatabaseHelper(Context context)
-        {
-            super(context, DATABASE_NAME, null, DATABASE_VERSION);
-        }
-        @Override
-        public void onCreate(SQLiteDatabase db) {
-            Log.d(TAG, "DatabaseHelper onCreate");
-            db.execSQL(TASK_TABLE_CREATE);
-        }
-        @Override
-        public void onUpgrade(SQLiteDatabase db, int oldVersion,
-                              int newVersion) {
-            Log.d(TAG, "DatabaseHelper onUpgrade");
-            Log.w(TAG, "Upgrading database from version " + oldVersion + " to "
-                    + newVersion + ", which will destroy all old data");
-            db.execSQL("DROP TABLE IF EXISTS " + TASK_TABLE);
-            onCreate(db);
-        } // onUpgrade
+        cv.put(KEY_DATE, date);
+        cv.put(KEY_TIME, time);
+        cv.put(KEY_WEIGHTING, weighting);
+        cv.put(KEY_URGENCY, urgency);
+        mDb.insert(TASK_TABLE, null, cv);
     }
 }
+
+
 

@@ -20,10 +20,14 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 import com.utas.stm.stm.TaskDB;
+import android.content.ContentValues;
+import android.content.Context;
 
 public class EditActivity extends AppCompatActivity implements View.OnClickListener {
     Button btnDatePicker, btnTimePicker, btnSubmit;
-    EditText txtDate, txtTime;
+    EditText txtDate, txtTime, txtCode, txtWeighting, txtTask;
+    String stringDate, stringTime, stringCode, stringWeighting, stringTask, stringUrgency;
+    Spinner urgency;
     private int mYear, mMonth, mDay, mHour, mMinute;
 
     @Override
@@ -34,8 +38,13 @@ public class EditActivity extends AppCompatActivity implements View.OnClickListe
         btnDatePicker=(Button)findViewById(R.id.editSetDateBtn);
         btnTimePicker=(Button)findViewById(R.id.editSetTimeBtn);
         btnSubmit=(Button)findViewById(R.id.editSubmitBtn);
+
         txtDate=(EditText)findViewById(R.id.editDueDate);
         txtTime=(EditText)findViewById(R.id.editDueTime);
+        txtTask=(EditText)findViewById(R.id.editTask);
+        txtCode=(EditText)findViewById(R.id.editUnitCode);
+        txtWeighting=(EditText)findViewById(R.id.editWeighting);
+        urgency=(Spinner)findViewById(R.id.editImportanceSpinner);
 
         btnDatePicker.setOnClickListener(this);
         btnTimePicker.setOnClickListener(this);
@@ -90,8 +99,24 @@ public class EditActivity extends AppCompatActivity implements View.OnClickListe
         }
 
         if (v == btnSubmit) {
-            SQLiteDatabase db;
+            TaskDB helper = new TaskDB(this);
+            SQLiteDatabase db = helper.getWritableDatabase();
 
+            stringCode = txtCode.getText().toString();
+            stringTask = txtTask.getText().toString();
+            stringDate = txtDate.getText().toString();
+            stringTime= txtTime.getText().toString();
+            stringWeighting = txtWeighting.getText().toString();
+            stringUrgency = urgency.getSelectedItem().toString();
+
+            ContentValues cv = new ContentValues();
+            cv.put(TaskDB.KEY_CODE, stringCode);
+            cv.put(TaskDB.KEY_TASK, stringTask);
+            cv.put(TaskDB.KEY_DATE, stringDate);
+            cv.put(TaskDB.KEY_TIME, stringTime);
+            cv.put(TaskDB.KEY_WEIGHTING, stringWeighting);
+            cv.put(TaskDB.KEY_URGENCY, stringUrgency);
+            db.insert(TaskDB.TASK_TABLE, null, cv);
             Log.d("submit", "submit button pressed");
         }
     }
