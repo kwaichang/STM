@@ -10,25 +10,42 @@ import android.database.sqlite.SQLiteOpenHelper;
 import com.utas.stm.stm.TaskDB;
 import android.database.Cursor;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 
 
-public class TaskListActivity extends Activity {
+
+public class TaskListActivity extends Activity implements View.OnClickListener {
     TextView txtData;
+    Button delBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_task_list);
+
+        //delBtn = (Button) findViewById(R.id.delete_btn);
+       // delBtn.setOnClickListener(this);
+
         TaskDB helper = new TaskDB(this);
-        Log.d("Here", "Here");
-        String text[] = helper.getTasks();
-        helper.close();
-        Log.d("Here", "Here");
-        txtData = (TextView) findViewById(R.id.task);
-        Log.d("Here", "Here");
-        txtData.setText(text[0]);
-        // set text to your TextView
+        Cursor cursor = helper.getTasks();
+        //txtData = (TextView) findViewById(R.id.task);
+        String[] fromFieldNames = new String[]{helper.KEY_CODE, helper.KEY_TASK, helper.KEY_DATE};
+        int[] viewID = new int[]{R.id.unit_code, R.id.task, R.id.due_date};
+        SimpleCursorAdapter cursorAdapter;
+        cursorAdapter = new SimpleCursorAdapter(getBaseContext(), R.layout.list_layout, cursor, fromFieldNames, viewID, 0);
+        ListView list = (ListView) findViewById(R.id.list_view);
+        list.setAdapter(cursorAdapter);
+    }
+
+    public void onClick(View v) {
+        if (v == delBtn)
+        {
+
+        }
     }
 }

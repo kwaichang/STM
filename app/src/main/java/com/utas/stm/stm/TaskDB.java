@@ -16,7 +16,6 @@ public class TaskDB extends SQLiteOpenHelper {
 
     public static final String TASK_TABLE = "task_data";
     public static final String KEY_ROWID = "_id";
-    public static final String KEY_TASK_ID = "task_id";
     public static final String KEY_CODE = "code";
     public static final String KEY_TASK = "task";
     public static final String KEY_DATE = "date";
@@ -62,22 +61,22 @@ public class TaskDB extends SQLiteOpenHelper {
         cv.put(KEY_URGENCY, urgency);
         mDb.insert(TASK_TABLE, null, cv);
     }
+    public void deleteRow(String[] id)
+    {
+        mDb.delete(TASK_TABLE, "WHERE " + KEY_ROWID + " =?", id);
+    }
 
-    public String[] getTasks() {
+    public Cursor getTasks() {
 
         String selectQuery = "SELECT  * FROM " + TASK_TABLE;
         SQLiteDatabase db  = this.getReadableDatabase();
         Cursor cursor      = db.rawQuery(selectQuery, null);
-        String[] data = null;
-        data = new String[100];
 
         if (cursor.moveToFirst()) {
             do {
-                data[0] = cursor.getString(2);
             } while (cursor.moveToNext());
         }
-        cursor.close();
-        return data;
+        return cursor;
     }
 }
 
