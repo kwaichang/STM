@@ -63,7 +63,7 @@ public class TaskDB extends SQLiteOpenHelper {
     }
     public void deleteRow(String[] id)
     {
-        mDb.delete(TASK_TABLE, "WHERE " + KEY_ROWID + " =?", id);
+        mDb.delete(TASK_TABLE, KEY_ROWID + " =? ", id);
     }
 
     public Cursor getTasks() {

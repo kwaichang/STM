@@ -30,6 +30,16 @@
             android:text="Due Date"
             android:layout_marginLeft="19dp"
             android:layout_marginRight="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:text="Delete Edit"
+            android:layout_gravity="right"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.48" />
+
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
