@@ -83,6 +83,7 @@
                 android:id="@+id/btnInfo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="onUrl"
                 android:text="Improving Time Management" />
 
             <Space
@@ -114,9 +115,7 @@
                     android:ems="10"
                     android:text="0%"
                     android:textColor="@android:color/black"
-                    android:textSize="24sp" />
-                    android:textColor="@android:color/black" />
-
+                    android:textSize="24sp"/>
             </LinearLayout>
         </LinearLayout>
         </LinearLayout>

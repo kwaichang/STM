@@ -2,6 +2,7 @@ package com.utas.stm.stm;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -36,6 +37,15 @@ TextView scoreText;
 
 
     }
+
+    public void onUrl(View v) {
+
+        Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://blogs.utas.edu.au/student-advice/tools-and-resources-for-time-management/"));
+        startActivity(i);
+
+        //Log.d("%s", "btnInfo pressed");
+    }
+
     public void editActivity(View v) {
         startActivity(new Intent(this, EditActivity.class));
     }

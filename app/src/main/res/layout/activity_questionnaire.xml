@@ -9,6 +9,7 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:fillViewport="true"
+        android:background="@drawable/background"
         tools:layout_editor_absoluteY="8dp"
         tools:layout_editor_absoluteX="8dp">
         <LinearLayout
@@ -19,6 +20,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="1. Do you make a list of the things you have to do each day?"/>
             <RadioGroup
@@ -31,6 +33,7 @@
                     android:layout_height="wrap_content"
                     android:text="Never"
                     android:id="@+id/q1_opt1"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true" />
 
@@ -39,6 +42,7 @@
                     android:layout_height="0dp"
                     android:text="Rarely"
                     android:id="@+id/q1_opt2"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt1"
                     android:layout_alignParentLeft="true"
@@ -49,6 +53,7 @@
                     android:layout_height="wrap_content"
                     android:text="Occasionally"
                     android:id="@+id/q1_opt3"
+                    android:textColor="@android:color/black"
                     android:layout_below="@+id/q1_opt2"
                     android:layout_alignParentLeft="true" />
 
@@ -57,6 +62,7 @@
                     android:layout_height="wrap_content"
                     android:text="Regularly"
                     android:id="@+id/q1_opt4"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
@@ -66,6 +72,7 @@
                     android:layout_height="wrap_content"
                     android:text="Always"
                     android:id="@+id/q1_opt5"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
@@ -74,6 +81,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="2. Do you plan your day before you start it?"/>
             <RadioGroup
@@ -87,6 +95,7 @@
                     android:layout_height="wrap_content"
                     android:text="Never"
                     android:id="@+id/q2_opt1"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true" />
 
@@ -95,6 +104,7 @@
                     android:layout_height="0dp"
                     android:text="Rarely"
                     android:id="@+id/q2_opt2"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt1"
                     android:layout_alignParentLeft="true"
@@ -105,6 +115,7 @@
                     android:layout_height="wrap_content"
                     android:text="Occasionally"
                     android:id="@+id/q2_opt3"
+                    android:textColor="@android:color/black"
                     android:layout_below="@+id/q1_opt2"
                     android:layout_alignParentLeft="true" />
 
@@ -113,6 +124,7 @@
                     android:layout_height="wrap_content"
                     android:text="Regularly"
                     android:id="@+id/q2_opt4"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
@@ -122,6 +134,7 @@
                     android:layout_height="wrap_content"
                     android:text="Always"
                     android:id="@+id/q2_opt5"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
@@ -131,6 +144,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="3. Do you make a schedule of the activities you have to do on work days?"/>
             <RadioGroup
@@ -144,6 +158,7 @@
                     android:layout_height="wrap_content"
                     android:text="Never"
                     android:id="@+id/q3_opt1"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true" />
 
@@ -152,6 +167,7 @@
                     android:layout_height="0dp"
                     android:text="Rarely"
                     android:id="@+id/q3_opt2"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt1"
                     android:layout_alignParentLeft="true"
@@ -162,6 +178,7 @@
                     android:layout_height="wrap_content"
                     android:text="Occasionally"
                     android:id="@+id/q3_opt3"
+                    android:textColor="@android:color/black"
                     android:layout_below="@+id/q1_opt2"
                     android:layout_alignParentLeft="true" />
 
@@ -170,6 +187,7 @@
                     android:layout_height="wrap_content"
                     android:text="Regularly"
                     android:id="@+id/q3_opt4"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
@@ -179,6 +197,7 @@
                     android:layout_height="wrap_content"
                     android:text="Always"
                     android:id="@+id/q3_opt5"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
@@ -187,6 +206,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="4. Do you write a set of goals for yourself for each day?"/>
             <RadioGroup
@@ -200,6 +220,7 @@
                     android:layout_height="wrap_content"
                     android:text="Never"
                     android:id="@+id/q4_opt1"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true"/>
 
@@ -208,6 +229,7 @@
                     android:layout_height="0dp"
                     android:text="Rarely"
                     android:id="@+id/q4_opt2"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt1"
                     android:layout_alignParentLeft="true"
@@ -218,6 +240,7 @@
                     android:layout_height="wrap_content"
                     android:text="Occasionally"
                     android:id="@+id/q4_opt3"
+                    android:textColor="@android:color/black"
                     android:layout_below="@+id/q1_opt2"
                     android:layout_alignParentLeft="true" />
 
@@ -226,6 +249,7 @@
                     android:layout_height="wrap_content"
                     android:text="Regularly"
                     android:id="@+id/q4_opt4"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
@@ -235,6 +259,7 @@
                     android:layout_height="wrap_content"
                     android:text="Always"
                     android:id="@+id/q4_opt5"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
@@ -243,6 +268,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="5. Do you spend time each day planning?"/>
             <RadioGroup
@@ -256,6 +282,7 @@
                     android:layout_height="wrap_content"
                     android:text="Never"
                     android:id="@+id/q5_opt1"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true" />
 
@@ -264,6 +291,7 @@
                     android:layout_height="0dp"
                     android:text="Rarely"
                     android:id="@+id/q5_opt2"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt1"
                     android:layout_alignParentLeft="true"
@@ -274,6 +302,7 @@
                     android:layout_height="wrap_content"
                     android:text="Occasionally"
                     android:id="@+id/q5_opt3"
+                    android:textColor="@android:color/black"
                     android:layout_below="@+id/q1_opt2"
                     android:layout_alignParentLeft="true" />
 
@@ -282,6 +311,7 @@
                     android:layout_height="wrap_content"
                     android:text="Regularly"
                     android:id="@+id/q5_opt4"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
@@ -291,6 +321,7 @@
                     android:layout_height="wrap_content"
                     android:text="Always"
                     android:id="@+id/q5_opt5"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
@@ -299,6 +330,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="6. Do you have a clear idea of what you want to accomplish during the next week?"/>
             <RadioGroup
@@ -311,6 +343,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Never"
+                    android:textColor="@android:color/black"
                     android:id="@+id/q6_opt1" />
 
                 <RadioButton
@@ -318,6 +351,7 @@
                     android:layout_height="0dp"
                     android:text="Rarely"
                     android:id="@+id/q6_opt2"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt1"
                     android:layout_alignParentLeft="true"
@@ -328,6 +362,7 @@
                     android:layout_height="wrap_content"
                     android:text="Occasionally"
                     android:id="@+id/q6_opt3"
+                    android:textColor="@android:color/black"
                     android:layout_below="@+id/q1_opt2"
                     android:layout_alignParentLeft="true" />
 
@@ -336,6 +371,7 @@
                     android:layout_height="wrap_content"
                     android:text="Regularly"
                     android:id="@+id/q6_opt4"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
@@ -345,6 +381,7 @@
                     android:layout_height="wrap_content"
                     android:text="Always"
                     android:id="@+id/q6_opt5"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
@@ -353,6 +390,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="7. Do you set and honor priorities?"/>
             <RadioGroup
@@ -366,6 +404,7 @@
                     android:layout_height="wrap_content"
                     android:text="Never"
                     android:id="@+id/q7_opt1"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true" />
 
@@ -374,6 +413,7 @@
                     android:layout_height="0dp"
                     android:text="Rarely"
                     android:id="@+id/q7_opt2"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt1"
                     android:layout_alignParentLeft="true"
@@ -384,6 +424,7 @@
                     android:layout_height="wrap_content"
                     android:text="Occasionally"
                     android:id="@+id/q7_opt3"
+                    android:textColor="@android:color/black"
                     android:layout_below="@+id/q1_opt2"
                     android:layout_alignParentLeft="true" />
 
@@ -392,6 +433,7 @@
                     android:layout_height="wrap_content"
                     android:text="Regularly"
                     android:id="@+id/q7_opt4"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
@@ -401,6 +443,7 @@
                     android:layout_height="wrap_content"
                     android:text="Always"
                     android:id="@+id/q7_opt5"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
@@ -409,6 +452,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="8. Do you often find yourself doing things which interfere with your schoolwork simply because you hate to say 'No' to people?"/>
             <RadioGroup
@@ -422,6 +466,7 @@
                     android:layout_height="wrap_content"
                     android:text="Never"
                     android:id="@+id/q8_opt1"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true" />
 
@@ -430,6 +475,7 @@
                     android:layout_height="0dp"
                     android:text="Rarely"
                     android:id="@+id/q8_opt2"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt1"
                     android:layout_alignParentLeft="true"
@@ -440,6 +486,7 @@
                     android:layout_height="wrap_content"
                     android:text="Occasionally"
                     android:id="@+id/q8_opt3"
+                    android:textColor="@android:color/black"
                     android:layout_below="@+id/q1_opt2"
                     android:layout_alignParentLeft="true" />
 
@@ -448,6 +495,7 @@
                     android:layout_height="wrap_content"
                     android:text="Regularly"
                     android:id="@+id/q8_opt4"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
@@ -457,6 +505,7 @@
                     android:layout_height="wrap_content"
                     android:text="Always"
                     android:id="@+id/q8_opt5"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
@@ -465,6 +514,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="9. Do you feel you are in charge of your own time, by and large?"/>
             <RadioGroup
@@ -478,6 +528,7 @@
                     android:layout_height="wrap_content"
                     android:text="Never"
                     android:id="@+id/q9_opt1"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true" />
 
@@ -486,6 +537,7 @@
                     android:layout_height="0dp"
                     android:text="Rarely"
                     android:id="@+id/q9_opt2"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt1"
                     android:layout_alignParentLeft="true"
@@ -496,6 +548,7 @@
                     android:layout_height="wrap_content"
                     android:text="Occasionally"
                     android:id="@+id/q9_opt3"
+                    android:textColor="@android:color/black"
                     android:layout_below="@+id/q1_opt2"
                     android:layout_alignParentLeft="true" />
 
@@ -504,6 +557,7 @@
                     android:layout_height="wrap_content"
                     android:text="Regularly"
                     android:id="@+id/q9_opt4"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
@@ -513,6 +567,7 @@
                     android:layout_height="wrap_content"
                     android:text="Always"
                     android:id="@+id/q9_opt5"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
@@ -521,6 +576,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="10. On an average class day do you spend more time with personal grooming than doing schoolwork?"/>
             <RadioGroup
@@ -534,6 +590,7 @@
                     android:layout_height="wrap_content"
                     android:text="Never"
                     android:id="@+id/q10_opt1"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true" />
 
@@ -542,6 +599,7 @@
                     android:layout_height="0dp"
                     android:text="Rarely"
                     android:id="@+id/q10_opt2"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt1"
                     android:layout_alignParentLeft="true"
@@ -552,6 +610,7 @@
                     android:layout_height="wrap_content"
                     android:text="Occasionally"
                     android:id="@+id/q10_opt3"
+                    android:textColor="@android:color/black"
                     android:layout_below="@+id/q1_opt2"
                     android:layout_alignParentLeft="true" />
 
@@ -560,6 +619,7 @@
                     android:layout_height="wrap_content"
                     android:text="Regularly"
                     android:id="@+id/q10_opt4"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
@@ -569,6 +629,7 @@
                     android:layout_height="wrap_content"
                     android:text="Always"
                     android:id="@+id/q10_opt5"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
@@ -577,6 +638,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="11. Do you believe that there is room for improvement in the way you manage your time?"/>
             <RadioGroup
@@ -590,6 +652,7 @@
                     android:layout_height="wrap_content"
                     android:text="Never"
                     android:id="@+id/q11_opt1"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true" />
 
@@ -598,6 +661,7 @@
                     android:layout_height="0dp"
                     android:text="Rarely"
                     android:id="@+id/q11_opt2"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt1"
                     android:layout_alignParentLeft="true"
@@ -608,6 +672,7 @@
                     android:layout_height="wrap_content"
                     android:text="Occasionally"
                     android:id="@+id/q11_opt3"
+                    android:textColor="@android:color/black"
                     android:layout_below="@+id/q1_opt2"
                     android:layout_alignParentLeft="true" />
 
@@ -616,6 +681,7 @@
                     android:layout_height="wrap_content"
                     android:text="Regularly"
                     android:id="@+id/q11_opt4"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
@@ -625,6 +691,7 @@
                     android:layout_height="wrap_content"
                     android:text="Always"
                     android:id="@+id/q11_opt5"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
@@ -633,6 +700,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="12. Do you make constructive use of your time?"/>
             <RadioGroup
@@ -646,6 +714,7 @@
                     android:layout_height="wrap_content"
                     android:text="Never"
                     android:id="@+id/q12_opt1"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true" />
 
@@ -654,6 +723,7 @@
                     android:layout_height="0dp"
                     android:text="Rarely"
                     android:id="@+id/q12_opt2"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt1"
                     android:layout_alignParentLeft="true"
@@ -664,6 +734,7 @@
                     android:layout_height="wrap_content"
                     android:text="Occasionally"
                     android:id="@+id/q12_opt3"
+                    android:textColor="@android:color/black"
                     android:layout_below="@+id/q1_opt2"
                     android:layout_alignParentLeft="true" />
 
@@ -672,6 +743,7 @@
                     android:layout_height="wrap_content"
                     android:text="Regularly"
                     android:id="@+id/q12_opt4"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
@@ -681,6 +753,7 @@
                     android:layout_height="wrap_content"
                     android:text="Always"
                     android:id="@+id/q12_opt5"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
@@ -689,6 +762,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="13. Do you continue unprofitable routines or activities?"/>
             <RadioGroup
@@ -702,6 +776,7 @@
                     android:layout_height="wrap_content"
                     android:text="Never"
                     android:id="@+id/q13_opt1"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true" />
 
@@ -710,6 +785,7 @@
                     android:layout_height="0dp"
                     android:text="Rarely"
                     android:id="@+id/q13_opt2"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt1"
                     android:layout_alignParentLeft="true"
@@ -720,6 +796,7 @@
                     android:layout_height="wrap_content"
                     android:text="Occasionally"
                     android:id="@+id/q13_opt3"
+                    android:textColor="@android:color/black"
                     android:layout_below="@+id/q1_opt2"
                     android:layout_alignParentLeft="true" />
 
@@ -728,6 +805,7 @@
                     android:layout_height="wrap_content"
                     android:text="Regularly"
                     android:id="@+id/q13_opt4"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
@@ -737,6 +815,7 @@
                     android:layout_height="wrap_content"
                     android:text="Always"
                     android:id="@+id/q13_opt5"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
@@ -745,6 +824,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="14. Do you usually keep your desk clear of everything other than what you are currently working on?"/>
             <RadioGroup
@@ -758,6 +838,7 @@
                     android:layout_height="wrap_content"
                     android:text="Never"
                     android:id="@+id/q14_opt1"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true" />
 
@@ -766,6 +847,7 @@
                     android:layout_height="0dp"
                     android:text="Rarely"
                     android:id="@+id/q14_opt2"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt1"
                     android:layout_alignParentLeft="true"
@@ -776,6 +858,7 @@
                     android:layout_height="wrap_content"
                     android:text="Occasionally"
                     android:id="@+id/q14_opt3"
+                    android:textColor="@android:color/black"
                     android:layout_below="@+id/q1_opt2"
                     android:layout_alignParentLeft="true" />
 
@@ -784,6 +867,7 @@
                     android:layout_height="wrap_content"
                     android:text="Regularly"
                     android:id="@+id/q14_opt4"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
@@ -793,6 +877,7 @@
                     android:layout_height="wrap_content"
                     android:text="Always"
                     android:id="@+id/q14_opt5"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
@@ -801,6 +886,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="15. Do you have a set of goals for the entire quarter?"/>
             <RadioGroup
@@ -814,6 +900,7 @@
                     android:layout_height="wrap_content"
                     android:text="Never"
                     android:id="@+id/q15_opt1"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true" />
 
@@ -822,6 +909,7 @@
                     android:layout_height="0dp"
                     android:text="Rarely"
                     android:id="@+id/q15_opt2"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt1"
                     android:layout_alignParentLeft="true"
@@ -832,6 +920,7 @@
                     android:layout_height="wrap_content"
                     android:text="Occasionally"
                     android:id="@+id/q15_opt3"
+                    android:textColor="@android:color/black"
                     android:layout_below="@+id/q1_opt2"
                     android:layout_alignParentLeft="true" />
 
@@ -840,6 +929,7 @@
                     android:layout_height="wrap_content"
                     android:text="Regularly"
                     android:id="@+id/q15_opt4"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
@@ -849,6 +939,7 @@
                     android:layout_height="wrap_content"
                     android:text="Always"
                     android:id="@+id/q15_opt5"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
@@ -857,6 +948,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="16. The night before a major assignment is due, are you usually still working on it?"/>
             <RadioGroup
@@ -870,6 +962,7 @@
                     android:layout_height="wrap_content"
                     android:text="Never"
                     android:id="@+id/q16_opt1"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true"
                     />
@@ -879,6 +972,7 @@
                     android:layout_height="0dp"
                     android:text="Rarely"
                     android:id="@+id/q16_opt2"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt1"
                     android:layout_alignParentLeft="true"
@@ -889,6 +983,7 @@
                     android:layout_height="wrap_content"
                     android:text="Occasionally"
                     android:id="@+id/q16_opt3"
+                    android:textColor="@android:color/black"
                     android:layout_below="@+id/q1_opt2"
                     android:layout_alignParentLeft="true" />
 
@@ -897,6 +992,7 @@
                     android:layout_height="wrap_content"
                     android:text="Regularly"
                     android:id="@+id/q16_opt4"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
@@ -906,6 +1002,7 @@
                     android:layout_height="wrap_content"
                     android:text="Always"
                     android:id="@+id/q16_opt5"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
@@ -914,6 +1011,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="17. When you have several things to do, do you think it is best to do a little bit of work on each one?"/>
             <RadioGroup
@@ -927,6 +1025,7 @@
                     android:layout_height="wrap_content"
                     android:text="Never"
                     android:id="@+id/q17_opt1"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true"
                     />
@@ -936,6 +1035,7 @@
                     android:layout_height="0dp"
                     android:text="Rarely"
                     android:id="@+id/q_opt2"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt1"
                     android:layout_alignParentLeft="true"
@@ -946,6 +1046,7 @@
                     android:layout_height="wrap_content"
                     android:text="Occasionally"
                     android:id="@+id/q17_opt3"
+                    android:textColor="@android:color/black"
                     android:layout_below="@+id/q1_opt2"
                     android:layout_alignParentLeft="true" />
 
@@ -954,6 +1055,7 @@
                     android:layout_height="wrap_content"
                     android:text="Regularly"
                     android:id="@+id/q17_opt4"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
@@ -963,6 +1065,7 @@
                     android:layout_height="wrap_content"
                     android:text="Always"
                     android:id="@+id/q17_opt5"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
@@ -971,6 +1074,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="18. Do you regularly review your class notes, even when a test is not imminent?"/>
             <RadioGroup
@@ -984,6 +1088,7 @@
                     android:layout_height="wrap_content"
                     android:text="Never"
                     android:id="@+id/q18_opt1"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true" />
 
@@ -992,6 +1097,7 @@
                     android:layout_height="0dp"
                     android:text="Rarely"
                     android:id="@+id/q18_opt2"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt1"
                     android:layout_alignParentLeft="true"
@@ -1002,6 +1108,7 @@
                     android:layout_height="wrap_content"
                     android:text="Occasionally"
                     android:id="@+id/q18_opt3"
+                    android:textColor="@android:color/black"
                     android:layout_below="@+id/q1_opt2"
                     android:layout_alignParentLeft="true" />
 
@@ -1010,6 +1117,7 @@
                     android:layout_height="wrap_content"
                     android:text="Regularly"
                     android:id="@+id/q18_opt4"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
@@ -1019,6 +1127,7 @@
                     android:layout_height="wrap_content"
                     android:text="Always"
                     android:id="@+id/q18_opt5"
+                    android:textColor="@android:color/black"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/q1_opt3"
                     android:layout_alignParentLeft="true"/>
