@@ -41,7 +41,6 @@ public class TaskDB extends SQLiteOpenHelper {
                 + KEY_TIME + " STRING NOT NULL, "
                 + KEY_WEIGHTING + " STRING NOT NULL, "
                 + KEY_URGENCY + " STRING NOT NULL);";
-        Log.d("submit", "submit button pressed");
         Log.d("Create", "OnCreate");
         db.execSQL(TASK_TABLE_CREATE);
         Log.d("Create", "OnCreate");
@@ -53,7 +52,7 @@ public class TaskDB extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + TASK_TABLE);
         onCreate(db);
     }
-    public void onsaving(String code, String task, String date, String time, String weighting, String urgency) {
+    public void onSaving(String code, String task, String date, String time, String weighting, String urgency) {
         ContentValues cv = new ContentValues();
         cv.put(KEY_CODE, code);
         cv.put(KEY_TASK, task);
@@ -62,6 +61,23 @@ public class TaskDB extends SQLiteOpenHelper {
         cv.put(KEY_WEIGHTING, weighting);
         cv.put(KEY_URGENCY, urgency);
         mDb.insert(TASK_TABLE, null, cv);
+    }
+
+    public String[] getTasks() {
+
+        String selectQuery = "SELECT  * FROM " + TASK_TABLE;
+        SQLiteDatabase db  = this.getReadableDatabase();
+        Cursor cursor      = db.rawQuery(selectQuery, null);
+        String[] data = null;
+        data = new String[100];
+
+        if (cursor.moveToFirst()) {
+            do {
+                data[0] = cursor.getString(2);
+            } while (cursor.moveToNext());
+        }
+        cursor.close();
+        return data;
     }
 }
 
