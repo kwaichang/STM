@@ -6,7 +6,7 @@
     android:layout_marginTop="50dp">
     <TextView
         android:id="@+id/unit_code"
-        android:layout_width="wrap_content"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
@@ -14,27 +14,27 @@
         android:layout_marginRight="10dp"
         android:paddingLeft="8dp"
         android:textSize="12sp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:textStyle="bold"
         android:text=""/>
     <TextView
         android:id="@+id/task"
-        android:layout_width="wrap_content"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:paddingLeft="8dp"
         android:textSize="12sp"
         android:textStyle="bold"
         android:text=""/>
     <TextView
         android:id="@+id/due_date"
-        android:layout_width="wrap_content"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="10dp"
@@ -51,9 +51,11 @@
             android:id="@+id/edit_btn"
             android:layout_width="35dp"
             android:layout_height="30dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="15dp"
             android:layout_alignParentRight="true"
             android:layout_marginRight="0dp"
+            android:layout_marginLeft="5dp"
+            android:onClick="onClickEdit"
             android:textSize="0dp"
             android:text="Edit" />
 
@@ -61,10 +63,10 @@
             android:id="@+id/delete_btn"
             android:layout_width="35dp"
             android:layout_height="30dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="15dp"
             android:layout_toLeftOf="@id/edit_btn"
             android:layout_marginRight="0dp"
-            android:onClick="onClick"
+            android:onClick="onClickDelete"
             android:textSize="0dp"
             android:text="Delete" />
     </RelativeLayout>

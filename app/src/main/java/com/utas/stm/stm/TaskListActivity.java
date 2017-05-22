@@ -20,9 +20,8 @@ import android.content.Intent;
 
 
 
-public class TaskListActivity extends Activity implements View.OnClickListener {
-    TextView txtData;
-    Button delBtn;
+public class TaskListActivity extends Activity {
+
     TaskDB helper;
     SimpleCursorAdapter cursorAdapter;
     ListView list;
@@ -34,14 +33,14 @@ public class TaskListActivity extends Activity implements View.OnClickListener {
 
         helper = new TaskDB(this);
         Cursor cursor = helper.getTasks();
-        String[] fromFieldNames = new String[]{helper.KEY_CODE, helper.KEY_TASK, helper.KEY_DATE, helper.KEY_ROWID};
-        int[] viewID = new int[]{R.id.unit_code, R.id.task, R.id.due_date, R.id.delete_btn};
+        String[] fromFieldNames = new String[]{helper.KEY_CODE, helper.KEY_TASK, helper.KEY_DATE, helper.KEY_ROWID, helper.KEY_ROWID};
+        int[] viewID = new int[]{R.id.unit_code, R.id.task, R.id.due_date, R.id.delete_btn, R.id.edit_btn};
         cursorAdapter = new SimpleCursorAdapter(getBaseContext(), R.layout.list_layout, cursor, fromFieldNames, viewID, 0);
         list = (ListView) findViewById(R.id.list_view);
         list.setAdapter(cursorAdapter);
     }
 
-    public void onClick(View v)
+    public void onClickDelete(View v)
     {
         Button b = (Button)v;
         String buttonText = b.getText().toString();
@@ -57,6 +56,13 @@ public class TaskListActivity extends Activity implements View.OnClickListener {
         cursorAdapter = new SimpleCursorAdapter(getBaseContext(), R.layout.list_layout, cursor, fromFieldNames, viewID, 0);
         list = (ListView) findViewById(R.id.list_view);
         list.setAdapter(cursorAdapter);
-
+    }
+    public void onClickEdit(View v)
+    {
+        Button b = (Button)v;
+        String buttonText = b.getText().toString();
+        Intent i=new Intent(TaskListActivity.this,EditActivity.class);
+        i.putExtra("id", buttonText);
+        startActivity(i);
     }
 }

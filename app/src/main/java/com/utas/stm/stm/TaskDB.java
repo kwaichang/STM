@@ -78,6 +78,26 @@ public class TaskDB extends SQLiteOpenHelper {
         }
         return cursor;
     }
+
+    public String[] getRow(String search) {
+
+        String[] row = new String[6];
+        String selectQuery = "SELECT  * FROM " + TASK_TABLE + " WHERE " + KEY_ROWID + " = " + search;
+        SQLiteDatabase db  = this.getReadableDatabase();
+        Cursor cursor      = db.rawQuery(selectQuery, null);
+
+        if (cursor.moveToFirst()) {
+            do {
+                row[0] = cursor.getString(1);
+                row[1] = cursor.getString(2);
+                row[2] = cursor.getString(3);
+                row[3] = cursor.getString(4);
+                row[4] = cursor.getString(5);
+                row[5] = cursor.getString(6);
+            } while (cursor.moveToNext());
+        }
+        return row;
+    }
 }
 
 

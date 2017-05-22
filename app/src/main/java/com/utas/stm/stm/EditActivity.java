@@ -3,6 +3,8 @@ package com.utas.stm.stm;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.app.TimePickerDialog;
+import android.content.Intent;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.icu.text.AlphabeticIndex;
 import android.icu.util.Calendar;
@@ -35,6 +37,8 @@ public class EditActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit);
 
+        Bundle bundle = getIntent().getExtras();
+
         btnDatePicker=(Button)findViewById(R.id.editSetDateBtn);
         btnTimePicker=(Button)findViewById(R.id.editSetTimeBtn);
         btnSubmit=(Button)findViewById(R.id.editSubmitBtn);
@@ -50,6 +54,21 @@ public class EditActivity extends AppCompatActivity implements View.OnClickListe
         btnTimePicker.setOnClickListener(this);
         btnSubmit.setOnClickListener(this);
 
+        if (this.getIntent().getExtras() != null && this.getIntent().getExtras().containsKey("id"))
+        {
+            Log.d(bundle.getString("id"), "Here!!!");
+            TaskDB helper = new TaskDB(this);
+            String[] id = new String[1];
+            id[0] = bundle.getString("id");
+            String[] data = helper.getRow(bundle.getString("id"));
+            Log.d("Hueh", "Here!!!!!!!");
+            txtCode.setText(data[0]);
+            txtTask.setText(data[1]);
+            txtDate.setText(data[2]);
+            txtTime.setText(data[3]);
+            txtWeighting.setText(data[4]);
+            helper.deleteRow(id);
+        }
     }
 
     @Override
@@ -117,7 +136,7 @@ public class EditActivity extends AppCompatActivity implements View.OnClickListe
             cv.put(TaskDB.KEY_WEIGHTING, stringWeighting);
             cv.put(TaskDB.KEY_URGENCY, stringUrgency);
             db.insert(TaskDB.TASK_TABLE, null, cv);
-            Log.d("submit", "submit button pressed");
+            startActivity(new Intent(this, MainActivity.class));
         }
     }
 
